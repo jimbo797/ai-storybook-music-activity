@@ -1,0 +1,121 @@
+* {
+  box-sizing:border-box
+}
+
+body {
+  margin:0;
+  background:#ede8e8;
+  zoom: 150%;
+}
+
+ul {
+  height:19em;
+  width:24em;
+  margin: 5em auto;
+  padding:3em 0 0 3em;
+  position:relative;
+  border:1px solid #1d1d1d;
+  border-radius:1em;
+  background:rgb(38, 38, 38);
+  box-shadow:0 0 50px rgba(0,0,0,0.5) inset,0 1px rgba(213, 213, 213, 0.2) inset,0 5px 15px rgba(0,0,0,0.5)
+}
+
+li {
+  margin:0;
+  padding:0;
+  list-style:none;
+  position:relative;
+  float:left;
+  margin:0 0 0 -1em
+}
+
+.white {
+  height:16em;
+  width:4em;
+  z-index:1;
+  border-left:1px solid #bbb;
+  border-bottom:1px solid #bbb;
+  border-radius:0 0 5px 5px;
+  box-shadow:-1px 0 0 rgba(255,255,255,0.8) inset,0 0 5px #ccc inset,0 0 3px rgba(0,0,0,0.2);
+  background:linear-gradient(to bottom,#eee 0%,#fff 100%)
+}
+
+.white:active {
+  border-top:1px solid #777;
+  border-left:1px solid #999;
+  border-bottom:1px solid #999;
+  box-shadow:2px 0 3px rgba(0,0,0,0.1) inset,-5px 5px 20px rgba(0,0,0,0.2) inset,0 0 3px rgba(0,0,0,0.2);
+}
+
+.red:active {
+  background:linear-gradient(to top,rgb(232, 81, 81) 0%,#e9e9e9 100%)
+}
+
+.blue:active {
+  background:linear-gradient(to top,rgb(71, 108, 227) 0%,#e9e9e9 100%)
+}
+
+.yellow:active {
+  background:linear-gradient(to top,rgb(240, 247, 62) 0%,#e9e9e9 100%)
+}
+
+.green:active {
+  background:linear-gradient(to top,rgb(123, 229, 151) 0%,#e9e9e9 100%)
+}
+
+.purple:active{
+  background:linear-gradient(to top,rgb(179, 79, 203) 0%,#e9e9e9 100%)
+}
+
+.black {
+  height:8em;
+  width:2em;
+  z-index:2;
+  border:1px solid #000;
+  border-radius:0 0 3px 3px;
+  box-shadow:-1px -1px 2px rgba(255,255,255,0.2) inset,0 -5px 2px 3px rgba(0,0,0,0.6) inset,0 2px 4px rgba(0,0,0,0.5);
+  background:linear-gradient(45deg,#222 0%,#555 100%)
+}
+
+ul li:first-child {
+  border-radius:5px 0 5px 5px
+}
+
+ul li:last-child {
+  border-radius:0 5px 5px 5px
+}
+
+.note {
+scale: .15;
+position: absolute;
+margin-top: -100px;
+margin-left: -120px;
+user-select: none;
+}
+
+.note.redNote {
+  filter:hue-rotate(-30deg);
+}
+
+.note.blueNote {
+  filter:hue-rotate(180deg);
+}
+
+.note.yellowNote {
+  filter:hue-rotate(10deg);
+}
+
+.note.greenNote {
+  filter:hue-rotate(90deg);
+}
+
+.note.purpleNote {
+  filter:hue-rotate(-50deg);
+}
+
+.guide {
+  position: relative;
+  width: 180px;
+  height: 180px;
+  margin-left: 75%;
+}

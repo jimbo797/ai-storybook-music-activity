@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Piano Activity</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+
+  <audio id="c" src="./piano_notes/C4.mp3" preload="auto"></audio>
+  <audio id="d" src="./piano_notes/D4.mp3" preload="auto"></audio>
+  <audio id="e" src="./piano_notes/E4.mp3" preload="auto"></audio>
+  <audio id="f" src="./piano_notes/F4.mp3" preload="auto"></audio>
+  <audio id="g" src="./piano_notes/G4.mp3" preload="auto"></audio>
+
+  <body>
+    <ul class="keys">
+      <li id="redKey" class="white red" onclick="onPress('c')">
+        <img class="note redNote" src="./orange_quarter_note.png">
+      </li>
+      <li class="black"></li>
+      <li id="blueKey" class="white blue" onclick="onPress('d')">
+        <img class="note blueNote" src="./orange_quarter_note.png">
+      </li>
+      <li class="black"></li>
+      <li id="yellowKey" class="white yellow" onclick="onPress('e')">
+        <img class="note yellowNote" src="./orange_quarter_note.png">
+      </li>
+      <li class="black"></li>
+      <li id="greenKey" class="white green" onclick="onPress('f')">
+        <img class="note greenNote" src="./orange_quarter_note.png">
+      </li>
+      <li class="black"></li>
+      <li id="purpleKey" class="white purple" onclick="onPress('g')">
+        <img class="note purpleNote" src="./orange_quarter_note.png">
+      </li>
+    </ul>
+
+    <!-- PLACEHOLDER -->
+    <!-- <img class="guide" src="robot.png"> -->
+
+    <script>
+      // import { Piano } from './node_modules/@tonejs/piano';
+      // const Piano = require('@tonejs/piano');
+  
+      // const piano = new Piano({ velocities: 5 });
+      // piano.toDestination();
+      // piano.load().then(() => {console.log('loaded!')});
+  
+      function onPress(note){
+        // piano.
+        const audio = document.getElementById(note);
+        audio.play();
+      }
+    </script>
+    
+  </body>
+</html>
